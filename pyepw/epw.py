@@ -15,7 +15,6 @@ import re
 
 
 class Location(object):
-
     """Corresponds to EPW IDD object `LOCATION`"""
     _internal_name = "LOCATION"
     field_count = 9
@@ -480,7 +479,6 @@ class Location(object):
 
 
 class DesignCondition(object):
-
     """Corresponds to EPW IDD object `DESIGN CONDITION`"""
     _internal_name = "DESIGN CONDITION"
     field_count = 68
@@ -3283,7 +3281,6 @@ class DesignCondition(object):
 
 
 class DesignConditions(object):
-
     """Corresponds to EPW IDD object `DESIGN CONDITIONS`"""
     _internal_name = "DESIGN CONDITIONS"
     field_count = 1
@@ -3366,7 +3363,6 @@ class DesignConditions(object):
 
 
 class TypicalOrExtremePeriod(object):
-
     """Corresponds to EPW IDD object `TYPICAL/EXTREME PERIOD`"""
     _internal_name = "TYPICAL/EXTREME PERIOD"
     field_count = 4
@@ -3589,7 +3585,6 @@ class TypicalOrExtremePeriod(object):
 
 
 class TypicalOrExtremePeriods(object):
-
     """Corresponds to EPW IDD object `TYPICAL/EXTREME PERIODS`"""
     _internal_name = "TYPICAL/EXTREME PERIODS"
     field_count = 1
@@ -3673,7 +3668,6 @@ class TypicalOrExtremePeriods(object):
 
 
 class GroundTemperature(object):
-
     """Corresponds to EPW IDD object `GROUND TEMPERATURE`"""
     _internal_name = "GROUND TEMPERATURE"
     field_count = 16
@@ -3952,7 +3946,8 @@ class GroundTemperature(object):
             except ValueError:
                 raise ValueError(
                     'value {} need to be of type float '
-                    'for field `depth_january_average_ground_temperature`'.format(value))
+                    'for field `depth_january_average_ground_temperature`'.format(
+                        value))
 
         self._depth_january_average_ground_temperature = value
 
@@ -3986,7 +3981,8 @@ class GroundTemperature(object):
             except ValueError:
                 raise ValueError(
                     'value {} need to be of type float '
-                    'for field `depth_february_average_ground_temperature`'.format(value))
+                    'for field `depth_february_average_ground_temperature`'.format(
+                        value))
 
         self._depth_february_average_ground_temperature = value
 
@@ -4225,7 +4221,8 @@ class GroundTemperature(object):
             except ValueError:
                 raise ValueError(
                     'value {} need to be of type float '
-                    'for field `depth_september_average_ground_temperature`'.format(value))
+                    'for field `depth_september_average_ground_temperature`'.format(
+                        value))
 
         self._depth_september_average_ground_temperature = value
 
@@ -4259,7 +4256,8 @@ class GroundTemperature(object):
             except ValueError:
                 raise ValueError(
                     'value {} need to be of type float '
-                    'for field `depth_october_average_ground_temperature`'.format(value))
+                    'for field `depth_october_average_ground_temperature`'.format(
+                        value))
 
         self._depth_october_average_ground_temperature = value
 
@@ -4293,7 +4291,8 @@ class GroundTemperature(object):
             except ValueError:
                 raise ValueError(
                     'value {} need to be of type float '
-                    'for field `depth_november_average_ground_temperature`'.format(value))
+                    'for field `depth_november_average_ground_temperature`'.format(
+                        value))
 
         self._depth_november_average_ground_temperature = value
 
@@ -4327,7 +4326,8 @@ class GroundTemperature(object):
             except ValueError:
                 raise ValueError(
                     'value {} need to be of type float '
-                    'for field `depth_december_average_ground_temperature`'.format(value))
+                    'for field `depth_december_average_ground_temperature`'.format(
+                        value))
 
         self._depth_december_average_ground_temperature = value
 
@@ -4391,7 +4391,6 @@ class GroundTemperature(object):
 
 
 class GroundTemperatures(object):
-
     """Corresponds to EPW IDD object `GROUND TEMPERATURES`"""
     _internal_name = "GROUND TEMPERATURES"
     field_count = 1
@@ -4474,7 +4473,6 @@ class GroundTemperatures(object):
 
 
 class Holiday(object):
-
     """Corresponds to EPW IDD object `HOLIDAY`"""
     _internal_name = "HOLIDAY"
     field_count = 2
@@ -4611,7 +4609,6 @@ class Holiday(object):
 
 
 class HolidaysOrDaylightSavings(object):
-
     """Corresponds to EPW IDD object `HOLIDAYS/DAYLIGHT SAVINGS`"""
     _internal_name = "HOLIDAYS/DAYLIGHT SAVINGS"
     field_count = 4
@@ -4834,7 +4831,6 @@ class HolidaysOrDaylightSavings(object):
 
 
 class Comments1(object):
-
     """Corresponds to EPW IDD object `COMMENTS 1`"""
     _internal_name = "COMMENTS 1"
     field_count = 1
@@ -4929,7 +4925,6 @@ class Comments1(object):
 
 
 class Comments2(object):
-
     """Corresponds to EPW IDD object `COMMENTS 2`"""
     _internal_name = "COMMENTS 2"
     field_count = 1
@@ -5024,7 +5019,6 @@ class Comments2(object):
 
 
 class DataPeriod(object):
-
     """Corresponds to EPW IDD object `DATA PERIOD`"""
     _internal_name = "DATA PERIOD"
     field_count = 5
@@ -5309,7 +5303,6 @@ class DataPeriod(object):
 
 
 class DataPeriods(object):
-
     """Corresponds to EPW IDD object `DATA PERIODS`"""
     _internal_name = "DATA PERIODS"
     field_count = 1
@@ -5392,7 +5385,6 @@ class DataPeriods(object):
 
 
 class WeatherData(object):
-
     """Corresponds to EPW IDD object `WEATHER DATA`"""
     _internal_name = "WEATHER DATA"
     field_count = 35
@@ -6092,7 +6084,8 @@ class WeatherData(object):
             except ValueError:
                 raise ValueError(
                     'value {} need to be of type float '
-                    'for field `extraterrestrial_direct_normal_radiation`'.format(value))
+                    'for field `extraterrestrial_direct_normal_radiation`'.format(
+                        value))
             if value < 0.0:
                 raise ValueError(
                     'value need to be greater or equal 0.0 '
@@ -6208,6 +6201,7 @@ class WeatherData(object):
         if value is not None:
             try:
                 value = float(value)
+                value = abs(value)
             except ValueError:
                 raise ValueError(
                     'value {} need to be of type float '
@@ -6528,15 +6522,12 @@ class WeatherData(object):
         if value is not None:
             try:
                 value = float(value)
+                value = abs(value)
+                value = min([10, value])
+                value = max([0, value])
             except ValueError:
                 raise ValueError('value {} need to be of type float '
                                  'for field `total_sky_cover`'.format(value))
-            if value < 0.0:
-                raise ValueError('value need to be greater or equal 0.0 '
-                                 'for field `total_sky_cover`')
-            if value > 10.0:
-                raise ValueError('value need to be smaller 10.0 '
-                                 'for field `total_sky_cover`')
 
         self._total_sky_cover = value
 
@@ -7042,7 +7033,6 @@ class WeatherData(object):
 
 
 class EPW(object):
-
     """Represens a EnergyPlus EPW weather data file."""
 
     def __init__(
