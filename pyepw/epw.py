@@ -4683,6 +4683,7 @@ class HolidaysOrDaylightSavings(object):
         if value is not None:
             try:
                 value = str(value)
+                value = value.strip()
             except ValueError:
                 raise ValueError('value {} need to be of type str '
                                  'for field `leapyear_observed`'.format(value))
@@ -6241,6 +6242,7 @@ class WeatherData(object):
         if value is not None:
             try:
                 value = float(value)
+                value = abs(value)
             except ValueError:
                 raise ValueError(
                     'value {} need to be of type float '
@@ -6280,6 +6282,7 @@ class WeatherData(object):
         if value is not None:
             try:
                 value = float(value)
+                value = abs(value)
             except ValueError:
                 raise ValueError(
                     'value {} need to be of type float '
@@ -6319,6 +6322,7 @@ class WeatherData(object):
         if value is not None:
             try:
                 value = float(value)
+                value = abs(value)
             except ValueError:
                 raise ValueError(
                     'value {} need to be of type float '
@@ -6358,6 +6362,7 @@ class WeatherData(object):
         if value is not None:
             try:
                 value = float(value)
+                value = abs(value)
             except ValueError:
                 raise ValueError(
                     'value {} need to be of type float '
@@ -6397,6 +6402,7 @@ class WeatherData(object):
         if value is not None:
             try:
                 value = float(value)
+                value = abs(value)
             except ValueError:
                 raise ValueError('value {} need to be of type float '
                                  'for field `zenith_luminance`'.format(value))
