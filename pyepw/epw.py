@@ -5921,12 +5921,8 @@ class WeatherData(object):
                 raise ValueError(
                     'value {} need to be of type float '
                     'for field `dew_point_temperature`'.format(value))
-            if value <= -70.0:
-                raise ValueError('value need to be greater -70.0 '
-                                 'for field `dew_point_temperature`')
-            if value >= 70.0:
-                raise ValueError('value need to be smaller 70.0 '
-                                 'for field `dew_point_temperature`')
+            value = min([70, value])
+            value = max([-70, value])
 
         self._dew_point_temperature = value
 
@@ -6487,12 +6483,8 @@ class WeatherData(object):
             except ValueError:
                 raise ValueError('value {} need to be of type float '
                                  'for field `wind_speed`'.format(value))
-            if value < 0.0:
-                raise ValueError('value need to be greater or equal 0.0 '
-                                 'for field `wind_speed`')
-            if value > 80.0:
-                raise ValueError('value need to be smaller 40.0 '
-                                 'for field `wind_speed`')
+            value = min([80, value])
+            value = max([0, value])
 
         self._wind_speed = value
 
