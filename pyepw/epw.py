@@ -1089,8 +1089,7 @@ class DesignCondition(object):
             try:
                 value = float(value)
             except ValueError:
-                raise ValueError('value {} need to be of type float '
-                                 'for field `db996`'.format(value))
+                value = None
 
         self._db996 = value
 
@@ -1123,8 +1122,7 @@ class DesignCondition(object):
             try:
                 value = float(value)
             except ValueError:
-                raise ValueError('value {} need to be of type float '
-                                 'for field `db990`'.format(value))
+                value = None
 
         self._db990 = value
 
@@ -1157,8 +1155,7 @@ class DesignCondition(object):
             try:
                 value = float(value)
             except ValueError:
-                raise ValueError('value {} need to be of type float '
-                                 'for field `dp996`'.format(value))
+                value = None
 
         self._dp996 = value
 
@@ -1192,8 +1189,7 @@ class DesignCondition(object):
             try:
                 value = float(value)
             except ValueError:
-                raise ValueError('value {} need to be of type float '
-                                 'for field `hr_dp996`'.format(value))
+                value = None
 
         self._hr_dp996 = value
 
@@ -1227,8 +1223,7 @@ class DesignCondition(object):
             try:
                 value = float(value)
             except ValueError:
-                raise ValueError('value {} need to be of type float '
-                                 'for field `db_dp996`'.format(value))
+                value = None
 
         self._db_dp996 = value
 
@@ -1261,8 +1256,7 @@ class DesignCondition(object):
             try:
                 value = float(value)
             except ValueError:
-                raise ValueError('value {} need to be of type float '
-                                 'for field `dp990`'.format(value))
+                value = None
 
         self._dp990 = value
 
@@ -1296,8 +1290,7 @@ class DesignCondition(object):
             try:
                 value = float(value)
             except ValueError:
-                raise ValueError('value {} need to be of type float '
-                                 'for field `hr_dp990`'.format(value))
+                value = None
 
         self._hr_dp990 = value
 
@@ -1331,8 +1324,7 @@ class DesignCondition(object):
             try:
                 value = float(value)
             except ValueError:
-                raise ValueError('value {} need to be of type float '
-                                 'for field `db_dp990`'.format(value))
+                value = None
 
         self._db_dp990 = value
 
@@ -1364,8 +1356,7 @@ class DesignCondition(object):
             try:
                 value = float(value)
             except ValueError:
-                raise ValueError('value {} need to be of type float '
-                                 'for field `ws004c`'.format(value))
+                value = None
 
         self._ws004c = value
 
@@ -1397,8 +1388,7 @@ class DesignCondition(object):
             try:
                 value = float(value)
             except ValueError:
-                raise ValueError('value {} need to be of type float '
-                                 'for field `db_ws004c`'.format(value))
+                value = None
 
         self._db_ws004c = value
 
@@ -1431,8 +1421,7 @@ class DesignCondition(object):
             try:
                 value = float(value)
             except ValueError:
-                raise ValueError('value {} need to be of type float '
-                                 'for field `ws010c`'.format(value))
+                value = None
 
         self._ws010c = value
 
@@ -1464,8 +1453,7 @@ class DesignCondition(object):
             try:
                 value = float(value)
             except ValueError:
-                raise ValueError('value {} need to be of type float '
-                                 'for field `db_ws010c`'.format(value))
+                value = None
 
         self._db_ws010c = value
 
@@ -1497,8 +1485,7 @@ class DesignCondition(object):
             try:
                 value = float(value)
             except ValueError:
-                raise ValueError('value {} need to be of type float '
-                                 'for field `ws_db996`'.format(value))
+                value = None
 
         self._ws_db996 = value
 
@@ -1531,8 +1518,7 @@ class DesignCondition(object):
             try:
                 value = float(value)
             except ValueError:
-                raise ValueError('value {} need to be of type float '
-                                 'for field `wd_db996`'.format(value))
+                value = None
 
         self._wd_db996 = value
 
@@ -1652,8 +1638,7 @@ class DesignCondition(object):
             try:
                 value = float(value)
             except ValueError:
-                raise ValueError('value {} need to be of type float '
-                                 'for field `dbr`'.format(value))
+                value = None
 
         self._dbr = value
 
@@ -1685,8 +1670,7 @@ class DesignCondition(object):
             try:
                 value = float(value)
             except ValueError:
-                raise ValueError('value {} need to be of type float '
-                                 'for field `db004`'.format(value))
+                value = None
 
         self._db004 = value
 
@@ -1719,8 +1703,7 @@ class DesignCondition(object):
             try:
                 value = float(value)
             except ValueError:
-                raise ValueError('value {} need to be of type float '
-                                 'for field `wb_db004`'.format(value))
+                value = None
 
         self._wb_db004 = value
 
@@ -1752,8 +1735,7 @@ class DesignCondition(object):
             try:
                 value = float(value)
             except ValueError:
-                raise ValueError('value {} need to be of type float '
-                                 'for field `db010`'.format(value))
+                value = None
 
         self._db010 = value
 
@@ -1786,8 +1768,7 @@ class DesignCondition(object):
             try:
                 value = float(value)
             except ValueError:
-                raise ValueError('value {} need to be of type float '
-                                 'for field `wb_db010`'.format(value))
+                value = None
 
         self._wb_db010 = value
 
@@ -1820,8 +1801,7 @@ class DesignCondition(object):
             try:
                 value = float(value)
             except ValueError:
-                raise ValueError('value {} need to be of type float '
-                                 'for field `db020`'.format(value))
+                value = None
 
         self._db020 = value
 
@@ -1854,8 +1834,7 @@ class DesignCondition(object):
             try:
                 value = float(value)
             except ValueError:
-                raise ValueError('value {} need to be of type float '
-                                 'for field `wb_db020`'.format(value))
+                value = None
 
         self._wb_db020 = value
 
@@ -1887,8 +1866,7 @@ class DesignCondition(object):
             try:
                 value = float(value)
             except ValueError:
-                raise ValueError('value {} need to be of type float '
-                                 'for field `wb004`'.format(value))
+                value = None
 
         self._wb004 = value
 
@@ -1921,8 +1899,7 @@ class DesignCondition(object):
             try:
                 value = float(value)
             except ValueError:
-                raise ValueError('value {} need to be of type float '
-                                 'for field `db_wb004`'.format(value))
+                value = None
 
         self._db_wb004 = value
 
@@ -1954,8 +1931,7 @@ class DesignCondition(object):
             try:
                 value = float(value)
             except ValueError:
-                raise ValueError('value {} need to be of type float '
-                                 'for field `wb010`'.format(value))
+                value = None
 
         self._wb010 = value
 
@@ -1988,8 +1964,7 @@ class DesignCondition(object):
             try:
                 value = float(value)
             except ValueError:
-                raise ValueError('value {} need to be of type float '
-                                 'for field `db_wb010`'.format(value))
+                value = None
 
         self._db_wb010 = value
 
@@ -2021,8 +1996,7 @@ class DesignCondition(object):
             try:
                 value = float(value)
             except ValueError:
-                raise ValueError('value {} need to be of type float '
-                                 'for field `wb020`'.format(value))
+                value = None
 
         self._wb020 = value
 
@@ -2055,8 +2029,7 @@ class DesignCondition(object):
             try:
                 value = float(value)
             except ValueError:
-                raise ValueError('value {} need to be of type float '
-                                 'for field `db_wb020`'.format(value))
+                value = None
 
         self._db_wb020 = value
 
@@ -2088,8 +2061,7 @@ class DesignCondition(object):
             try:
                 value = float(value)
             except ValueError:
-                raise ValueError('value {} need to be of type float '
-                                 'for field `ws_db004`'.format(value))
+                value = None
 
         self._ws_db004 = value
 
@@ -2123,8 +2095,7 @@ class DesignCondition(object):
             try:
                 value = float(value)
             except ValueError:
-                raise ValueError('value {} need to be of type float '
-                                 'for field `wd_db004`'.format(value))
+                value = None
 
         self._wd_db004 = value
 
@@ -2156,8 +2127,7 @@ class DesignCondition(object):
             try:
                 value = float(value)
             except ValueError:
-                raise ValueError('value {} need to be of type float '
-                                 'for field `dp004`'.format(value))
+                value = None
 
         self._dp004 = value
 
@@ -2189,8 +2159,7 @@ class DesignCondition(object):
             try:
                 value = float(value)
             except ValueError:
-                raise ValueError('value {} need to be of type float '
-                                 'for field `hr_dp004`'.format(value))
+                value = None
 
         self._hr_dp004 = value
 
@@ -2223,8 +2192,7 @@ class DesignCondition(object):
             try:
                 value = float(value)
             except ValueError:
-                raise ValueError('value {} need to be of type float '
-                                 'for field `db_dp004`'.format(value))
+                value = None
 
         self._db_dp004 = value
 
@@ -2256,8 +2224,7 @@ class DesignCondition(object):
             try:
                 value = float(value)
             except ValueError:
-                raise ValueError('value {} need to be of type float '
-                                 'for field `dp010`'.format(value))
+                value = None
 
         self._dp010 = value
 
@@ -2290,8 +2257,7 @@ class DesignCondition(object):
             try:
                 value = float(value)
             except ValueError:
-                raise ValueError('value {} need to be of type float '
-                                 'for field `hr_dp010`'.format(value))
+                value = None
 
         self._hr_dp010 = value
 
@@ -2324,8 +2290,7 @@ class DesignCondition(object):
             try:
                 value = float(value)
             except ValueError:
-                raise ValueError('value {} need to be of type float '
-                                 'for field `db_dp010`'.format(value))
+                value = None
 
         self._db_dp010 = value
 
@@ -2357,8 +2322,7 @@ class DesignCondition(object):
             try:
                 value = float(value)
             except ValueError:
-                raise ValueError('value {} need to be of type float '
-                                 'for field `dp020`'.format(value))
+                value = None
 
         self._dp020 = value
 
@@ -2391,8 +2355,7 @@ class DesignCondition(object):
             try:
                 value = float(value)
             except ValueError:
-                raise ValueError('value {} need to be of type float '
-                                 'for field `hr_dp020`'.format(value))
+                value = None
 
         self._hr_dp020 = value
 
@@ -2425,8 +2388,7 @@ class DesignCondition(object):
             try:
                 value = float(value)
             except ValueError:
-                raise ValueError('value {} need to be of type float '
-                                 'for field `db_dp020`'.format(value))
+                value = None
 
         self._db_dp020 = value
 
@@ -2459,8 +2421,7 @@ class DesignCondition(object):
             try:
                 value = float(value)
             except ValueError:
-                raise ValueError('value {} need to be of type float '
-                                 'for field `en004`'.format(value))
+                value = None
 
         self._en004 = value
 
@@ -2493,8 +2454,7 @@ class DesignCondition(object):
             try:
                 value = float(value)
             except ValueError:
-                raise ValueError('value {} need to be of type float '
-                                 'for field `db_en004`'.format(value))
+                value = None
 
         self._db_en004 = value
 
@@ -2527,8 +2487,7 @@ class DesignCondition(object):
             try:
                 value = float(value)
             except ValueError:
-                raise ValueError('value {} need to be of type float '
-                                 'for field `en010`'.format(value))
+                value = None
 
         self._en010 = value
 
@@ -2561,8 +2520,7 @@ class DesignCondition(object):
             try:
                 value = float(value)
             except ValueError:
-                raise ValueError('value {} need to be of type float '
-                                 'for field `db_en010`'.format(value))
+                value = None
 
         self._db_en010 = value
 
@@ -2595,8 +2553,7 @@ class DesignCondition(object):
             try:
                 value = float(value)
             except ValueError:
-                raise ValueError('value {} need to be of type float '
-                                 'for field `en020`'.format(value))
+                value = None
 
         self._en020 = value
 
@@ -2629,8 +2586,7 @@ class DesignCondition(object):
             try:
                 value = float(value)
             except ValueError:
-                raise ValueError('value {} need to be of type float '
-                                 'for field `db_en020`'.format(value))
+                value = None
 
         self._db_en020 = value
 
@@ -2739,8 +2695,7 @@ class DesignCondition(object):
             try:
                 value = float(value)
             except ValueError:
-                raise ValueError('value {} need to be of type float '
-                                 'for field `ws010`'.format(value))
+                value = None
 
         self._ws010 = value
 
@@ -2772,8 +2727,7 @@ class DesignCondition(object):
             try:
                 value = float(value)
             except ValueError:
-                raise ValueError('value {} need to be of type float '
-                                 'for field `ws025`'.format(value))
+                value = None
 
         self._ws025 = value
 
@@ -2805,8 +2759,7 @@ class DesignCondition(object):
             try:
                 value = float(value)
             except ValueError:
-                raise ValueError('value {} need to be of type float '
-                                 'for field `ws050`'.format(value))
+                value = None
 
         self._ws050 = value
 
@@ -2838,8 +2791,7 @@ class DesignCondition(object):
             try:
                 value = float(value)
             except ValueError:
-                raise ValueError('value {} need to be of type float '
-                                 'for field `wbmax`'.format(value))
+                value = None
 
         self._wbmax = value
 
@@ -2871,8 +2823,7 @@ class DesignCondition(object):
             try:
                 value = float(value)
             except ValueError:
-                raise ValueError('value {} need to be of type float '
-                                 'for field `dbmin_mean`'.format(value))
+                value = None
 
         self._dbmin_mean = value
 
@@ -2904,8 +2855,7 @@ class DesignCondition(object):
             try:
                 value = float(value)
             except ValueError:
-                raise ValueError('value {} need to be of type float '
-                                 'for field `dbmax_mean`'.format(value))
+                value = None
 
         self._dbmax_mean = value
 
@@ -2937,8 +2887,7 @@ class DesignCondition(object):
             try:
                 value = float(value)
             except ValueError:
-                raise ValueError('value {} need to be of type float '
-                                 'for field `dbmin_stddev`'.format(value))
+                value = None
 
         self._dbmin_stddev = value
 
@@ -2970,8 +2919,7 @@ class DesignCondition(object):
             try:
                 value = float(value)
             except ValueError:
-                raise ValueError('value {} need to be of type float '
-                                 'for field `dbmax_stddev`'.format(value))
+                value = None
 
         self._dbmax_stddev = value
 
@@ -3003,8 +2951,7 @@ class DesignCondition(object):
             try:
                 value = float(value)
             except ValueError:
-                raise ValueError('value {} need to be of type float '
-                                 'for field `dbmin05years`'.format(value))
+                value = None
 
         self._dbmin05years = value
 
@@ -3036,8 +2983,7 @@ class DesignCondition(object):
             try:
                 value = float(value)
             except ValueError:
-                raise ValueError('value {} need to be of type float '
-                                 'for field `dbmax05years`'.format(value))
+                value = None
 
         self._dbmax05years = value
 
@@ -3069,8 +3015,7 @@ class DesignCondition(object):
             try:
                 value = float(value)
             except ValueError:
-                raise ValueError('value {} need to be of type float '
-                                 'for field `dbmin10years`'.format(value))
+                value = None
 
         self._dbmin10years = value
 
@@ -3102,8 +3047,7 @@ class DesignCondition(object):
             try:
                 value = float(value)
             except ValueError:
-                raise ValueError('value {} need to be of type float '
-                                 'for field `dbmax10years`'.format(value))
+                value = None
 
         self._dbmax10years = value
 
@@ -3135,8 +3079,7 @@ class DesignCondition(object):
             try:
                 value = float(value)
             except ValueError:
-                raise ValueError('value {} need to be of type float '
-                                 'for field `dbmin20years`'.format(value))
+                value = None
 
         self._dbmin20years = value
 
@@ -3168,8 +3111,7 @@ class DesignCondition(object):
             try:
                 value = float(value)
             except ValueError:
-                raise ValueError('value {} need to be of type float '
-                                 'for field `dbmax20years`'.format(value))
+                value = None
 
         self._dbmax20years = value
 
@@ -3201,8 +3143,7 @@ class DesignCondition(object):
             try:
                 value = float(value)
             except ValueError:
-                raise ValueError('value {} need to be of type float '
-                                 'for field `dbmin50years`'.format(value))
+                value = None
 
         self._dbmin50years = value
 
@@ -3234,8 +3175,7 @@ class DesignCondition(object):
             try:
                 value = float(value)
             except ValueError:
-                raise ValueError('value {} need to be of type float '
-                                 'for field `dbmax50years`'.format(value))
+                value = None
 
         self._dbmax50years = value
 
@@ -6033,8 +5973,7 @@ class WeatherData(object):
                 raise ValueError('value need to be greater or equal 0 '
                                  'for field `relative_humidity`')
             if value > 110:
-                raise ValueError('value need to be smaller 110 '
-                                 'for field `relative_humidity`')
+                value = 110
 
         self._relative_humidity = value
 
@@ -6551,7 +6490,7 @@ class WeatherData(object):
             if value < 0.0:
                 raise ValueError('value need to be greater or equal 0.0 '
                                  'for field `wind_speed`')
-            if value > 40.0:
+            if value > 80.0:
                 raise ValueError('value need to be smaller 40.0 '
                                  'for field `wind_speed`')
 
